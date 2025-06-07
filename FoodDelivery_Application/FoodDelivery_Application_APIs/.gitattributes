@@ -1,2 +1,4 @@
 /mvnw text eol=lf
 *.cmd text eol=crlf
+FoodDelivery_Application/mvnw text eol=lf
+FoodDelivery_Application/mvnw linguist-language=Shell
