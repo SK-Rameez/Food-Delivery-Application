@@ -1,0 +1,11 @@
+package com.nt.entity;
+
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class FoodItem 
+{
+
+}

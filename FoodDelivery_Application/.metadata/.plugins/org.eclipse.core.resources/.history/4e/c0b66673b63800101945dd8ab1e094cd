@@ -1,0 +1,36 @@
+package com.nt.config;
+
+import java.io.FileInputStream;
+
+import javax.annotation.PostConstruct;
+
+import org.springframework.stereotype.Component;
+
+import com.google.auth.oauth2.GoogleCredentials;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.FirebaseOptions;
+
+@Component
+public class FirebaseInitializer 
+{
+
+    @PostConstruct
+    public void initialize() {
+        try {
+            FileInputStream serviceAccount =
+                new FileInputStream("src/main/resources/firebase-service-account.json");
+
+            FirebaseOptions options = new FirebaseOptions.Builder()
+                .setCredentials(GoogleCredentials.fromStream(serviceAccount))
+                .setStorageBucket("food-delivery-applicatio-cf71c.appspot.com") // replace with your actual bucket name
+                .build();
+
+            if (FirebaseApp.getApps().isEmpty()) {
+                FirebaseApp.initializeApp(options);
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}

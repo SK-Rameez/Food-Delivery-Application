@@ -1,0 +1,8 @@
+package com.nt.entity;
+
+@Data
+@AllArgsConstructor
+public class FoodItem 
+{
+
+}

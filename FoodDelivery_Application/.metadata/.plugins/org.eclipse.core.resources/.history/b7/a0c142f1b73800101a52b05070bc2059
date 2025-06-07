@@ -1,0 +1,15 @@
+
+spring.application.name=FoodDelivery_Application_APIs
+
+#port number
+server.port=8081
+
+#mongoDB configuration
+spring.data.mongodb.uri=mongodb://localhost:27017/Food-Delivery-Application
+
+
+# Max file size and request size (adjust as needed)
+spring.servlet.multipart.max-file-size=20MB
+spring.servlet.multipart.max-request-size=20MB
+
+

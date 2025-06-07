@@ -1,0 +1,8 @@
+
+spring.application.name=FoodDelivery_Application_APIs
+
+#port number
+server.port=8081
+
+#mongoDB configuration
+spring.data.mongodb.uri=mongodb://localhost:27017/Food-Delivery-Application

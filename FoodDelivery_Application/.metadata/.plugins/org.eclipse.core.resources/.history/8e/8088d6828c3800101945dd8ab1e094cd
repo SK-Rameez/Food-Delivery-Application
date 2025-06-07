@@ -1,0 +1,11 @@
+package com.nt.io;
+
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class FoodRequest 
+{
+
+}
