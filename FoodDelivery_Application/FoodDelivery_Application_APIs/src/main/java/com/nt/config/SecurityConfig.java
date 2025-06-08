@@ -58,8 +58,13 @@ public class SecurityConfig
      private  UrlBasedCorsConfigurationSource corsConfigurationSource()
      {
     	 CorsConfiguration config=new CorsConfiguration();
-    	 config.setAllowedOrigins(List.of("http://localhost:5173","http://localhost:5174",
-		  "https://food-delivery-applicatio-a34a6.web.app"," https://food-delivery-customerspanel.web.app"));
+    	 config.setAllowedOrigins(List.of(
+                  "http://localhost:5173",
+                  "http://localhost:5174",
+                  "https://food-delivery-applicatio-a34a6.web.app",
+                  "https://food-delivery-customerspanel.web.app"  
+          ));
+
     	 config.setAllowedMethods(List.of("GET","POST","PUT","PATCH","DELETE"));
     	 config.setAllowedHeaders(List.of("Authorization","Content-Type"));
     	 config.setAllowCredentials(true);
@@ -70,15 +75,6 @@ public class SecurityConfig
     	 return source;
      }
      
-   /*  @Bean
-     public AuthenticationManager authenticationManager()
-     {
-    	 DaoAuthenticationProvider authProvider=new DaoAuthenticationProvider();
-    	 authProvider.setUserDetailsService(userService);
-    	 authProvider.setPasswordEncoder(passwordEncoder());
-    	 
-    	 return new ProviderManager(authProvider);
-     }  */
      
      @Bean
      public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception 
