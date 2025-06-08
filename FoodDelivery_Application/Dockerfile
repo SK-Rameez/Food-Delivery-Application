@@ -1,12 +1,13 @@
-# Use Maven to build the application
-FROM maven:3.9.4-eclipse-temurin-17 AS build
+# Builder stage
+FROM eclipse-temurin:17-jdk AS builder
 WORKDIR /app
-COPY . .
-RUN mvn clean package -DskipTests
+COPY FoodDelivery_Application_APIs/ ./FoodDelivery_Application_APIs/
+WORKDIR /app/FoodDelivery_Application_APIs
+RUN chmod +x mvnw && ./mvnw clean package -DskipTests
 
-# Use lightweight JDK image to run the app
-FROM eclipse-temurin:17-jdk-alpine
+# Runtime stage
+FROM eclipse-temurin:17-jre
 WORKDIR /app
-COPY --from=build /app/target/*.jar app.jar
+COPY --from=builder /app/FoodDelivery_Application_APIs/target/*.jar app.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java","-jar","/app/app.jar"]
