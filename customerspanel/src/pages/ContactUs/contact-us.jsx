@@ -21,7 +21,7 @@ const contactUs= () => {
                {
                   const response= await axios.post(`https://food-delivery-application-5.onrender.com/contact-api/details`,details,
                     {headers:{Authorization:`Bearer ${token}`}})
-                  if(response.status==200)
+                  if(response.status==201)
                   {
                      toast.success('thanks for respond your queries will solve few minutes later');
                      navigate('/');
