@@ -39,7 +39,7 @@ const UpdateFoodItem = () => {
 
     const loadFoodItem= async ()=>{
            console.log("food item details");
-           const response= await axios.get(`http://localhost:8081/food-api/find/${params.id}`);
+           const response= await axios.get(`https://food-delivery-application-5.onrender.com/food-api/find/${params.id}`);
            setFoodItem(response.data);
            setImage(response.data.imageUrl);
            console.log(response.data);
@@ -107,10 +107,10 @@ const UpdateFoodItem = () => {
               <dl>
                    <dt>
                       <label htmlFor="image">
-                        <img src={preview? URL.createObjectURL(preview):image} height={70} width={70} alt='Food Item Preview'/>
+                        <img src={preview? URL.createObjectURL(preview):image} height={70} width={70} alt='food item preview'/>
                       </label>
                    </dt>
-                   <dd><input type="file" id='image'  onChange={handleImageChange}/></dd>
+                   <dd><input type="file" id='image' hidden onChange={handleImageChange}/></dd>
                   <dt>Name</dt>
                   <dd><input type="text" className='form-control' onChange={formik.handleChange} value={formik.values.name} id="name" name="name" /></dd>
                   <dt>Description</dt>

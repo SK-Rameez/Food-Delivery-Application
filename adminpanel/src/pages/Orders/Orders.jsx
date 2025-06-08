@@ -7,13 +7,13 @@ const Orders = () => {
          const [data,setData]=useState([]);
 
          const fetchOrders= async ()=>{
-            const response = await axios.get(`http://localhost:8081/order-api/all`);
+            const response = await axios.get(`https://food-delivery-application-5.onrender.com/order-api/all`);
             setData(response.data);
             console.log(response.data);
          }
 
          const updateStatus= async(event,orderId)=>{
-             const response= await axios.patch(`http://localhost:8081/order-api/status/${orderId}?status=${event.target.value}`);
+             const response= await axios.patch(`https://food-delivery-application-5.onrender.com/${orderId}?status=${event.target.value}`);
              if(response.status==200)
              {
                 await fetchOrders();
