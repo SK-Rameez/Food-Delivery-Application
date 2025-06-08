@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const GET_FOODITEMS=`http://localhost:8081/food-api/all`;
+const GET_FOODITEMS=`https://food-delivery-application-5.onrender.com/food-api/all`;
 
-const GET_FOODITEM=`http://localhost:8081/food-api/find`;
+const GET_FOODITEM=`https://food-delivery-application-5.onrender.com/food-api/find`;
 
 export const fetchFoodList= async()=>{
          try

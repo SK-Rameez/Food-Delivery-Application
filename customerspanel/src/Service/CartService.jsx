@@ -1,12 +1,12 @@
 import axios from "axios";
 
-const ADDTO_CART_API=`http://localhost:8081/cart-api/add`;
+const ADDTO_CART_API=`https://food-delivery-application-5.onrender.com/cart-api/add`;
 
-const REMOVE_FROM_CART_API=`http://localhost:8081/cart-api/remove`;
+const REMOVE_FROM_CART_API=`https://food-delivery-application-5.onrender.com/cart-api/remove`;
 
-const SET_CART_ITEM_QNTY_API=`http://localhost:8081/cart-api/set`;
+const SET_CART_ITEM_QNTY_API=`https://food-delivery-application-5.onrender.com/cart-api/set`;
 
-const GET_CART_API=`http://localhost:8081/cart-api/get`;
+const GET_CART_API=`https://food-delivery-application-5.onrender.com/cart-api/get`;
 
 export const addFoodItemToCart= async (foodId,token)=>{
     try

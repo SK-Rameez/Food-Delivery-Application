@@ -19,7 +19,7 @@ const contactUs= () => {
           onSubmit:(async details=>{
                try
                {
-                  const response= await axios.post(`http://localhost:8081/contact-api/details`,details,
+                  const response= await axios.post(`https://food-delivery-application-5.onrender.com/contact-api/details`,details,
                     {headers:{Authorization:`Bearer ${token}`}})
                   if(response.status==200)
                   {

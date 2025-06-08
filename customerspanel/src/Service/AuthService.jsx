@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const USER_REGISTER_API=`http://localhost:8081/user-api/register`;
+const USER_REGISTER_API=`https://food-delivery-application-5.onrender.com/user-api/register`;
 
-const USER_LOGIN_API=`http://localhost:8081/user-api/login`;
+const USER_LOGIN_API=`https://food-delivery-application-5.onrender.com/user-api/login`;
 
 
 export const RegisterUser= async (details)=>{

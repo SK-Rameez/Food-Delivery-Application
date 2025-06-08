@@ -20,7 +20,7 @@ const PlaceOrder = () => {
      const clearCart= async ()=>{
                  try
                  {
-                    await axios.delete(`http://localhost:8081/cart-api/clear`,
+                    await axios.delete(`https://food-delivery-application-5.onrender.com/cart-api/clear`,
                            {headers:{Authorization:`Bearer ${token}`}});
                     setQuantities({})
                  }
@@ -34,7 +34,7 @@ const PlaceOrder = () => {
       const deleteOrder= async (orderId)=>{
                   try
                   {
-                     await axios.delete(`http://localhost:8081/order-api/remove/${orderId}`,
+                     await axios.delete(`https://food-delivery-application-5.onrender.com/order-api/remove/${orderId}`,
                     {headers:{Authorization:`Bearer ${token}`}})
                   }
                   catch(error)
@@ -51,7 +51,7 @@ const PlaceOrder = () => {
                     razorpay_signature:razorpayResponse.razorpay_signature
                   }
 
-                  const response= await axios.post(`http://localhost:8081/order-api/verify`,
+                  const response= await axios.post(`https://food-delivery-application-5.onrender.com/order-api/verify`,
                     paymentData,{headers:{Authorization:`Bearer ${token}`}});
                     try
                     {
@@ -136,7 +136,7 @@ const PlaceOrder = () => {
 
              try
              {
-                const response= await axios.post(`http://localhost:8081/order-api/create`,
+                const response= await axios.post(`https://food-delivery-application-5.onrender.com/order-api/create`,
                   orderData,{headers:{Authorization:`Bearer ${token}`}})
                   console.log(response.data);
 

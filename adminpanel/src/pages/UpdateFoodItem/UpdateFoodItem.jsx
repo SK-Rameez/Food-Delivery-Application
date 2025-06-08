@@ -110,7 +110,7 @@ const UpdateFoodItem = () => {
                         <img src={preview? URL.createObjectURL(preview):image} height={70} width={70} alt='Food Item Preview'/>
                       </label>
                    </dt>
-                   <dd><input type="file" id='image' hidden onChange={handleImageChange}/></dd>
+                   <dd><input type="file" id='image'  onChange={handleImageChange}/></dd>
                   <dt>Name</dt>
                   <dd><input type="text" className='form-control' onChange={formik.handleChange} value={formik.values.name} id="name" name="name" /></dd>
                   <dt>Description</dt>

@@ -58,7 +58,8 @@ public class SecurityConfig
      private  UrlBasedCorsConfigurationSource corsConfigurationSource()
      {
     	 CorsConfiguration config=new CorsConfiguration();
-    	 config.setAllowedOrigins(List.of("http://localhost:5173","http://localhost:5174","https://food-delivery-applicatio-a34a6.web.app"));
+    	 config.setAllowedOrigins(List.of("http://localhost:5173","http://localhost:5174",
+		  "https://food-delivery-applicatio-a34a6.web.app"," https://food-delivery-customerspanel.web.app"));
     	 config.setAllowedMethods(List.of("GET","POST","PUT","PATCH","DELETE"));
     	 config.setAllowedHeaders(List.of("Authorization","Content-Type"));
     	 config.setAllowCredentials(true);

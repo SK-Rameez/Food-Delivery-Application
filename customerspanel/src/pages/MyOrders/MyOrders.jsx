@@ -10,7 +10,7 @@ const MyOrders = () => {
          const [data,setData]=useState([]);
 
          const fetchData= async ()=>{
-            const response = await axios.get(`http://localhost:8081/order-api/get`,
+            const response = await axios.get(`https://food-delivery-application-5.onrender.com/order-api/get`,
                 {headers:{Authorization:`Bearer ${token}`}});
             setData(response.data);
             console.log(response.data);
