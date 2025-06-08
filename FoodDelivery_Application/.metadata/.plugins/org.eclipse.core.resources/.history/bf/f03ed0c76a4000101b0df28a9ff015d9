@@ -1,0 +1,10 @@
+package com.nt.io;
+
+import java.util.List;
+
+public class OrderRequest 
+{
+   private String userId;
+   private List<OrderItem> items;
+   
+}

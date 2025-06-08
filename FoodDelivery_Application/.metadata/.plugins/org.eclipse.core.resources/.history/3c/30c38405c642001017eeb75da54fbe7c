@@ -1,0 +1,6 @@
+package com.nt.entity;
+
+public class ContactEntity 
+{
+   private String fir
+}

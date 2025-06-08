@@ -1,0 +1,20 @@
+package com.nt.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.nt.entity.ContactEntity;
+import com.nt.repository.ContactRepository;
+
+public class ContactServiceImp implements IContactService
+{
+	@Autowired
+	private ContactRepository contactRepo;
+
+	@Override
+	public String saveUserIssueDetails(ContactEntity details) 
+	{
+		contactRepo.save(details);
+		return null;
+	}
+
+}

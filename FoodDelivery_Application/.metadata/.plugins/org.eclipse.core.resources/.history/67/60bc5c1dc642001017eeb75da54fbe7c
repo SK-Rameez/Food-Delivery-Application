@@ -1,0 +1,10 @@
+package com.nt.entity;
+
+@
+public class ContactEntity 
+{
+   private String firstName;
+   private String lastName;
+   private String email;
+   private String message; 
+}

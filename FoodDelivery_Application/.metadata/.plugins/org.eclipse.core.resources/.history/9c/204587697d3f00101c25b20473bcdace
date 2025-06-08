@@ -1,0 +1,6 @@
+package com.nt.service;
+
+public interface ICartService 
+{
+    public String addToCart(CartRequest request);
+}

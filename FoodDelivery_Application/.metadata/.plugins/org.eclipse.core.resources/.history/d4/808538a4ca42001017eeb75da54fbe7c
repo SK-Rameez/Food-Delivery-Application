@@ -1,0 +1,11 @@
+package com.nt.io;
+
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Bulider
+public class ContactRequest 
+{
+
+}

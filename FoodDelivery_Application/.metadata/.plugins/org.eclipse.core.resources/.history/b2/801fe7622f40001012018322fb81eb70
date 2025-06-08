@@ -1,0 +1,9 @@
+package com.nt.io;
+
+import lombok.Data;
+
+@Data
+public class OrderItem 
+{
+
+}

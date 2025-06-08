@@ -1,0 +1,8 @@
+package com.nt.service;
+
+import com.nt.io.OrderRequest;
+
+public interface IOrderService 
+{
+   public OrderResponse createOrderWithPayment(OrderRequest request);
+}

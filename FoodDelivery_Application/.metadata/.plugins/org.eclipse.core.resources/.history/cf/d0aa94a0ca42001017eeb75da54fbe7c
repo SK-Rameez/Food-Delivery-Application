@@ -1,0 +1,9 @@
+package com.nt.io;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Bulider
+public class ContactRequest 
+{
+
+}

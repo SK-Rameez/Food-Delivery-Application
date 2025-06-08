@@ -1,0 +1,6 @@
+package com.nt.service;
+
+public interface IOrderService 
+{
+   public OrderResponse createOrderWithPayment(OrderRequest re)
+}

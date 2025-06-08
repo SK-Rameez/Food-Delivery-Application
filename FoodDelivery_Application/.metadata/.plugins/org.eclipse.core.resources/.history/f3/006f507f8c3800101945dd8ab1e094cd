@@ -1,9 +1,0 @@
-package com.nt.io;
-
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-public class FoodRequest 
-{
-
-}

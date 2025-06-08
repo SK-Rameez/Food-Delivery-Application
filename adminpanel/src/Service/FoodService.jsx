@@ -1,12 +1,12 @@
 import axios from "axios";
 
-const ADD_FOODITEM=`http://localhost:8081/food-api/add`;
+const ADD_FOODITEM=`https://food-delivery-application-5.onrender.com/food-api/add`;
 
-const GET_FOODITEMS=`http://localhost:8081/food-api/all`;
+const GET_FOODITEMS=`https://food-delivery-application-5.onrender.com/food-api/all`;
 
-const UPDATE_FOODITEM=`http://localhost:8081/food-api/update/`;
+const UPDATE_FOODITEM=`https://food-delivery-application-5.onrender.com/food-api/update/`;
 
-const DELETE_FOODITEM=`http://localhost:8081/food-api/delete/`;
+const DELETE_FOODITEM=`https://food-delivery-application-5.onrender.com/food-api/delete/`;
 
 export const addFoodItem= async (data,image)=>{
 

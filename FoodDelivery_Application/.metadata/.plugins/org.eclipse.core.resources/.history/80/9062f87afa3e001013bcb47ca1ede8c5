@@ -1,0 +1,23 @@
+package com.nt.io;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.d
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Document(collection="carts")
+@Builder
+public class CartRequest 
+{
+	private String userId;
+	private Map<String,Integer> items=new HashMap<>();
+}

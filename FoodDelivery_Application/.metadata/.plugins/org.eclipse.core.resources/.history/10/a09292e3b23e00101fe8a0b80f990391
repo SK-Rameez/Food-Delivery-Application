@@ -1,0 +1,12 @@
+package com.nt.repository;
+
+import java.util.Optional;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+import com.nt.entity.UserDetails;
+
+public interface UserRepository extends MongoRepository<UserDetails,String>
+{
+    public Optional<UserDetails> findByEmail(String mail);
+}

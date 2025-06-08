@@ -1,0 +1,8 @@
+package com.nt.io;
+
+@AllArgsConstructor
+@NoArgsConstructor
+public class ContactRequest 
+{
+
+}

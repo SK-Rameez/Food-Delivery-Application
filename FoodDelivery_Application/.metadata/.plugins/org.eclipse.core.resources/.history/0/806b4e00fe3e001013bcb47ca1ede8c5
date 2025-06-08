@@ -1,0 +1,14 @@
+package com.nt.service;
+
+import org.springframework.security.core.Authentication;
+
+public class AuthenticationFacadeImp implements AuthenticationFacade
+{
+
+	@Override
+	public Authentication getAuthentication() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

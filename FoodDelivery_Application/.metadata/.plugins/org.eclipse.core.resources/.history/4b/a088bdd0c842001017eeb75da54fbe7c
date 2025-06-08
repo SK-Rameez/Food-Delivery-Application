@@ -1,0 +1,28 @@
+package com.nt.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.nt.entity.ContactEntity;
+import com.nt.service.IContactService;
+
+public class ContactOperationsController 
+{
+	@Autowired
+	private IContactService service;
+	
+   public ResponseEntity<Stri> userIssueDetails(@RequestBody ContactEntity details)
+   {
+	   try
+	   {
+		   String result=service.saveUserIssueDetails(details);
+		   return new 
+		   
+	   }
+	   catch(Exception e)
+	   {
+		   
+	   }
+   }
+}

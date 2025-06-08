@@ -1,9 +1,0 @@
-package com.nt.entity;
-
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-public class FoodItem 
-{
-
-}

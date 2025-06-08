@@ -1,0 +1,8 @@
+package com.nt.service;
+
+import com.nt.io.CartRequest;
+
+public interface ICartService 
+{
+    public CartResponse addToCart(CartRequest request);
+}

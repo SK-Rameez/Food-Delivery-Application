@@ -1,0 +1,7 @@
+package com.nt.io;
+
+@Data
+public class OrderItem 
+{
+
+}

@@ -1,0 +1,11 @@
+package com.nt.service;
+
+import com.nt.io.OrderRequest;
+import com.nt.io.OrderResponse;
+import com.razorpay.RazorpayException;
+
+public interface IOrderService 
+{
+   public OrderResponse createOrderWithPayment(OrderRequest orderRequest) throws RazorpayException;
+   public void verifyPayment
+}

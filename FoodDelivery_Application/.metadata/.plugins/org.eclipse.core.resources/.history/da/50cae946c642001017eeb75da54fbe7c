@@ -1,0 +1,17 @@
+package com.nt.entity;
+
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Document(collection="")
+public class ContactEntity 
+{
+   private String firstName;
+   private String lastName;
+   private String email;
+   private String message; 
+}

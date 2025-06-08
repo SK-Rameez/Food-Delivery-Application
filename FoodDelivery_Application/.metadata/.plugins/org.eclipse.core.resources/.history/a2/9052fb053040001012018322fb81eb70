@@ -1,0 +1,7 @@
+package com.nt.entity;
+
+@Documnet(collection=)
+public class OrderEntity 
+{
+
+}

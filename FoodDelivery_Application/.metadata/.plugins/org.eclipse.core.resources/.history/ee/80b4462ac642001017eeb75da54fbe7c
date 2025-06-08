@@ -1,0 +1,11 @@
+package com.nt.entity;
+
+@AllArgsConstructor
+@NoArgsConstructor
+public class ContactEntity 
+{
+   private String firstName;
+   private String lastName;
+   private String email;
+   private String message; 
+}

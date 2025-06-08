@@ -1,0 +1,12 @@
+package com.nt.io;
+
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class ContactRequest 
+{
+
+}
