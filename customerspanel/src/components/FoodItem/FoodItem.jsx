@@ -24,7 +24,6 @@ const FoodItem = ({id,name,description,imageUrl,price,rating}) => {
                    <i className="bi bi-star-fill text-warning"></i>
                    <i className="bi bi-star-fill text-warning"></i>
                    <i className="bi bi-star-half text-warning"></i>
-                  <small className="text-muted">({rating})</small>
                </div>
            </div>
        </div>
