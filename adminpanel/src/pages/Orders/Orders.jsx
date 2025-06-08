@@ -13,7 +13,7 @@ const Orders = () => {
          }
 
          const updateStatus= async(event,orderId)=>{
-             const response= await axios.patch(`https://food-delivery-application-5.onrender.com/${orderId}?status=${event.target.value}`);
+             const response= await axios.patch(`https://food-delivery-application-5.onrender.com/order-api/status/${orderId}?status=${event.target.value}`);
              if(response.status==200)
              {
                 await fetchOrders();
