@@ -12,9 +12,10 @@ import delivery from './delivery.png'
 import noodles from './noodles.jpeg'
 import fried_rice from './fried_rice.jpeg'
 import manchurian from './manchurian.jpeg'
+import notFound from './not-found.jpg'
 
 
-export const assets={LOGO,cart,profile,delivery};
+export const assets={LOGO,cart,profile,delivery,notFound};
 
 export const Categories=[
     {

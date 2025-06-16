@@ -12,6 +12,7 @@ import Login from './components/Login/Login.jsx'
 import { toast, ToastContainer } from 'react-toastify'
 import MyOrders from './pages/MyOrders/MyOrders.jsx'
 import { StoreContext } from './context/StoreContext.jsx'
+import PageNotFound from './pages/PageNotFound/PageNotFound.jsx'
 
 const App = () => {
          const {token}=useContext(StoreContext);
@@ -30,6 +31,7 @@ const App = () => {
                <Route path='/register' element={token ? <Home/>:<Register/>}></Route>
                <Route path='/login' element={token ? <Home/>:<Login/>}></Route>
                <Route path='/myOrders' element={token ? <MyOrders/>:<Login/>}></Route>
+               <Route path='*' element={<PageNotFound/>}></Route>
           </Routes>
     </div>
   )
