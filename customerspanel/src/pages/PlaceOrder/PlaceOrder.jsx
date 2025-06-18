@@ -64,7 +64,8 @@ const PlaceOrder = () => {
                     else
                     {
                        toast.error('payment falide please try again');
-                       navigate('/');                    }
+                       navigate('/');                   
+                    }
 
                     }
                     catch(error)

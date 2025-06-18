@@ -30,7 +30,7 @@ const contactUs= () => {
                catch(error)
                {
                    console.log(error);
-                   toast.error('some problem in there tyr again later');
+                   toast.error('please login to share your queries...');
                }
           })
 

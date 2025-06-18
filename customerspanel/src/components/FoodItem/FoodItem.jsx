@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { StoreContext } from '../../context/StoreContext'
 
-const FoodItem = ({id,name,description,imageUrl,price,rating}) => {
+const FoodItem = ({id,name,description,imageUrl,price}) => {
 
     const {increaseQuantity,decreaseQuantity,quantities,token}=useContext(StoreContext);
     const navigate=useNavigate();

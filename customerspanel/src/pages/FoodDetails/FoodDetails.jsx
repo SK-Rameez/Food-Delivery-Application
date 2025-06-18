@@ -48,7 +48,6 @@ const FoodDetails = () => {
                         <i className="bi bi-star-fill text-warning"></i>
                         <i className="bi bi-star-fill text-warning"></i>
                         <i className="bi bi-star-half text-warning"></i>
-                        <small className="text-muted">({foodItem.rating})</small>
                     </span>
                  </div>
                 < p className="lead">{foodItem.description}</p>

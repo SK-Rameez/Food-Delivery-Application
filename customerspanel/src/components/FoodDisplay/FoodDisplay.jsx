@@ -22,7 +22,6 @@ const FoodDisplay = ({category,searchText}) => {
                       description={item.description}
                       imageUrl={item.imageUrl}
                       price={item.price}
-                      rating={item.rating}
                    />
                 )
               )) : (
